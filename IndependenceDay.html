@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Independence Day 2026 | 🇮🇳</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS VARIABLES & RESET
+       ========================================================================== */
+    :root {
+      --saffron: #FF671F;
+      --saffron-light: #FFA066;
+      --white: #FFFFFF;
+      --green: #046A38;
+      --green-light: #069A51;
+      --navy: #06038D;
+      --navy-glow: rgba(6, 3, 141, 0.4);
+      --dark-bg: #0b0f19;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    /* Ambient Background Particle Canvas */
+    #particle-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 1.2rem 2rem;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(11, 15, 25, 0.75);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-title);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .brand-flag-pill {
+      display: flex;
+      flex-direction: column;
+      width: 18px;
+      height: 14px;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .brand-flag-pill span:nth-child(1) { background: var(--saffron); height: 33.33%; }
+    .brand-flag-pill span:nth-child(2) { background: var(--white); height: 33.33%; }
+    .brand-flag-pill span:nth-child(3) { background: var(--green); height: 33.33%; }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    nav a:hover {
+      color: var(--text-main);
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background: linear-gradient(90deg, var(--saffron), var(--green));
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 7rem 1.5rem 4rem;
+      z-index: 1;
+    }
+
+    .badge-year {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      border-radius: 999px;
+      background: rgba(255, 103, 31, 0.12);
+      border: 1px solid rgba(255, 103, 31, 0.35);
+      color: var(--saffron-light);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      animation: pulseBadge 3s infinite alternate;
+    }
+
+    @keyframes pulseBadge {
+      0% { box-shadow: 0 0 0 0 rgba(255, 103, 31, 0.2); }
+      100% { box-shadow: 0 0 15px 4px rgba(255, 103, 31, 0.25); }
+    }
+
+    .hero-title {
+      font-family: var(--font-title);
+      font-size: clamp(2.2rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--saffron) 20%, #ffffff 50%, var(--green-light) 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.1));
+    }
+
+    .hero-date {
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      color: #cbd5e1;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-quote {
+      max-width: 650px;
+      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Ashoka Chakra Graphic */
+    .chakra-container {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 2.5rem;
+      position: relative;
+      filter: drop-shadow(0 0 16px rgba(6, 3, 141, 0.7));
+    }
+
+    .chakra-svg {
+      width: 100%;
+      height: 100%;
+      animation: spinChakra 18s linear infinite;
+    }
+
+    @keyframes spinChakra {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Jai Hind CTA Button */
+    .btn-jai-hind {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--saffron), #e05307);
+      color: #fff;
+      padding: 0.9rem 2.2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(255, 103, 31, 0.35);
+      transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-jai-hind::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .btn-jai-hind:hover::before {
+      left: 100%;
+    }
+
+    .btn-jai-hind:hover {
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 14px 35px rgba(255, 103, 31, 0.5);
+    }
+
+    .btn-jai-hind:active {
+      transform: translateY(-1px) scale(0.98);
+    }
+
+    /* ==========================================================================
+       SHARED SECTION STYLES
+       ========================================================================== */
+    section {
+      position: relative;
+      padding: 6rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-tag {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--saffron);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* Scroll Fade-in Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(35px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       SECTION 1: ABOUT
+       ========================================================================== */
+    .about-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      backdrop-filter: blur(12px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--saffron), var(--white), var(--green));
+    }
+
+    .about-text {
+      font-size: 1.15rem;
+      color: #cbd5e1;
+      line-height: 1.85;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .highlight-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .highlight-item:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .highlight-num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--saffron-light);
+      display: block;
+      font-family: var(--font-title);
+    }
+
+    .highlight-label {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       SECTION 2: FREEDOM FIGHTERS
+       ========================================================================== */
+    .fighters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .fighter-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 2rem 1.8rem;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .fighter-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--saffron), var(--green));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .fighter-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .fighter-card:hover::after {
+      opacity: 1;
+    }
+
+    .fighter-icon-wrapper {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .fighter-name {
+      font-family: var(--font-title);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: #fff;
+    }
+
+    .fighter-title {
+      font-size: 0.85rem;
+      color: var(--saffron-light);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .fighter-quote {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      font-style: italic;
+      line-height: 1.5;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    }
+
+    /* ==========================================================================
+       SECTION 3: TIMELINE (1947 -> 2026)
+       ========================================================================== */
+    .timeline {
+      position: relative;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: linear-gradient(180deg, var(--saffron), var(--white), var(--green));
+      transform: translateX(-50%);
+      opacity: 0.7;
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 1.5rem 2.5rem;
+      box-sizing: border-box;
+    }
+
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+      text-align: left;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      top: 2rem;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--dark-bg);
+      border: 3px solid var(--saffron);
+      z-index: 2;
+    }
+
+    .timeline-item.left .timeline-dot {
+      right: -8px;
+    }
+
+    .timeline-item.right .timeline-dot {
+      left: -8px;
+      border-color: var(--green);
+    }
+
+    .timeline-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-card:hover {
+      transform: scale(1.02);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .timeline-year {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--saffron);
+      margin-bottom: 0.3rem;
+      font-family: var(--font-title);
+    }
+
+    .timeline-item.right .timeline-year {
+      color: var(--green-light);
+    }
+
+    .timeline-heading {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SECTION 4: FINAL CELEBRATION & TRIBUTE
+       ========================================================================== */
+    .final-section-wrapper {
+      position: relative;
+      margin-top: 4rem;
+      padding: 7rem 1.5rem;
+      border-radius: 30px;
+      overflow: hidden;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(255, 103, 31, 0.15) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(4, 106, 56, 0.15) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* Animated Wave Background Effect */
+    .tricolor-wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 103, 31, 0.08) 0%,
+        rgba(255, 255, 255, 0.08) 33%,
+        rgba(4, 106, 56, 0.08) 66%,
+        rgba(255, 103, 31, 0.08) 100%
+      );
+      animation: waveMove 12s linear infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @keyframes waveMove {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    #fireworks-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .final-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .final-heading {
+      font-family: var(--font-title);
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .final-subtext {
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    .celebrate-btn {
+      background: #ffffff;
+      color: var(--dark-bg);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .celebrate-btn:hover {
+      transform: scale(1.06);
+      background: #f8fafc;
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.35);
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem 2rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    footer p span {
+      color: #ef4444;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE DESIGN
+       ========================================================================== */
+    @media (max-width: 768px) {
+      header {
+        padding: 1rem 1.25rem;
+      }
+      nav ul {
+        display: none; /* simple clean mobile view */
+      }
+      .timeline::before {
+        left: 20px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 3.5rem;
+        padding-right: 1rem;
+      }
+      .timeline-item.left,
+      .timeline-item.right {
+        left: 0;
+        text-align: left;
+      }
+      .timeline-item.left .timeline-dot,
+      .timeline-item.right .timeline-dot {
+        left: 12px;
+        right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particle Background Layer -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header>
+    <a href="#" class="brand">
+      <div class="brand-flag-pill">
+        <span></span><span></span><span></span>
+      </div>
+      INDIA 2026
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#fighters">Freedom Fighters</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#tribute">Tribute</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="home">
+      <div class="badge-year">🇮🇳 15 August 2026</div>
+      
+      <h1 class="hero-title">
+        <span class="gradient-text">Happy Independence Day</span>
+      </h1>
+
+      <p class="hero-date">15 AUGUST 2026</p>
+
+      <!-- Ashoka Chakra SVG with 24 precise spokes -->
+      <div class="chakra-container" aria-label="Ashoka Chakra">
+        <svg class="chakra-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer Circle -->
+          <circle cx="100" cy="100" r="90" fill="none" stroke="#000088" stroke-width="6" />
+          <circle cx="100" cy="100" r="82" fill="none" stroke="#000088" stroke-width="2" />
+          <!-- Inner Hub -->
+          <circle cx="100" cy="100" r="16" fill="#000088" />
+          <circle cx="100" cy="100" r="7" fill="#ffffff" />
+          <!-- 24 Spokes -->
+          <g id="chakra-spokes" stroke="#000088" stroke-width="2.5" stroke-linecap="round"></g>
+        </svg>
+      </div>
+
+      <p class="hero-quote">
+        "Celebrating the spirit of freedom, unity and a new India."
+      </p>
+
+      <a href="#tribute" class="btn-jai-hind" id="hero-btn">
+        Jai Hind 🇮🇳
+      </a>
+    </section>
+
+    <!-- 1. About Independence Day Section -->
+    <section id="about" class="reveal">
+      <div class="section-header">
+        <span class="section-tag">Dawn of Freedom</span>
+        <h2 class="section-title">15 August 1947</h2>
+      </div>
+      <div class="about-card">
+        <p class="about-text">
+          On <strong>15th August 1947</strong>, India awakened to life and freedom after centuries of colonial rule. 
+          As the tricolor flag soared over the Red Fort in Delhi, the world witnessed the triumph of fearless resilience, 
+          peaceful resistance, and united courage. Today, as we commemorate our journey towards <strong>2026</strong>, 
+          we honor the immortal legacy of our ancestors and reaffirm our pledge to building an inclusive, progressive, and self-reliant nation.
+        </p>
+        
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="highlight-num">1947</span>
+            <span class="highlight-label">Year of Independence</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-num">24</span>
+            <span class="highlight-label">Spokes of Duty & Dharma</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-num">1.4B+</span>
+            <span class="highlight-label">Hearts Beating As One</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Freedom Fighters Section -->
+    <section id="fighters" class="reveal">
+      <div class="section-header">
+        <span class="section-tag">Heroes of the Soil</span>
+        <h2 class="section-title">Courage That Shaped Destiny</h2>
+      </div>
+
+      <div class="fighters-grid">
+        <!-- Bhagat Singh -->
+        <div class="fighter-card">
+          <div class="fighter-icon-wrapper">🔥</div>
+          <h3 class="fighter-name">Bhagat Singh</h3>
+          <span class="fighter-title">Shaheed-e-Azam</span>
+          <p class="fighter-quote">"They may kill me, but they cannot kill my ideas. They can crush my body, but they will not be able to crush my spirit."</p>
+        </div>
+
+        <!-- Mahatma Gandhi -->
+        <div class="fighter-card">
+          <div class="fighter-icon-wrapper">🕊️</div>
+          <h3 class="fighter-name">Mahatma Gandhi</h3>
+          <span class="fighter-title">Father of the Nation</span>
+          <p class="fighter-quote">"In a gentle way, you can shake the world. Freedom is never dear at any price; it is the breath of life."</p>
+        </div>
+
+        <!-- Subhas Chandra Bose -->
+        <div class="fighter-card">
+          <div class="fighter-icon-wrapper">⚔️</div>
+          <h3 class="fighter-name">Subhas Chandra Bose</h3>
+          <span class="fighter-title">Netaji</span>
+          <p class="fighter-quote">"Give me blood, and I shall give you freedom! One individual may die for an idea, but that idea will incarnate in a thousand lives."</p>
+        </div>
+
+        <!-- Rani Lakshmibai -->
+        <div class="fighter-card">
+          <div class="fighter-icon-wrapper">🛡️</div>
+          <h3 class="fighter-name">Rani Lakshmibai</h3>
+          <span class="fighter-title">Queen of Jhansi</span>
+          <p class="fighter-quote">"I shall not surrender my Jhansi. We will fight for our independence until our very last breath."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. India's Journey Timeline (1947 -> 2026) -->
+    <section id="journey" class="reveal">
+      <div class="section-header">
+        <span class="section-tag">Historical Milestone</span>
+        <h2 class="section-title">India's Journey (1947 → 2026)</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- 1947 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1947</span>
+            <h3 class="timeline-heading">Dawn of Sovereignty</h3>
+            <p class="timeline-desc">India breaks the shackles of colonial oppression and delivers the historic 'Tryst with Destiny'.</p>
+          </div>
+        </div>
+
+        <!-- 1950 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1950</span>
+            <h3 class="timeline-heading">The Republic Born</h3>
+            <p class="timeline-desc">The Constitution of India comes into effect, solidifying the world’s largest and most vibrant democracy.</p>
+          </div>
+        </div>
+
+        <!-- 1983 - 2000s -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1983 – 2008</span>
+            <h3 class="timeline-heading">Scientific & Global Rise</h3>
+            <p class="timeline-desc">Green revolution, economic liberalization, IT revolution, and the Chandrayaan-1 lunar exploration.</p>
+          </div>
+        </div>
+
+        <!-- 2023 - 2026 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2026 & Beyond</span>
+            <h3 class="timeline-heading">Viksit Bharat (New India)</h3>
+            <p class="timeline-desc">A global powerhouse in technology, green energy, space, and economic innovation, leading with harmony.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Final Section: Tribute & Fireworks -->
+    <section id="tribute" class="reveal">
+      <div class="final-section-wrapper">
+        <div class="tricolor-wave"></div>
+        <canvas id="fireworks-canvas"></canvas>
+
+        <div class="final-content">
+          <h2 class="final-heading gradient-text">Proud to be Indian 🇮🇳</h2>
+          <p class="final-subtext">Jai Hind ❤️</p>
+          <button class="celebrate-btn" onclick="triggerFireworksBatch()">
+            🎆 Celebrate with Fireworks
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Honoring the spirit of unity, diversity, and sacrifice.</p>
+    <p style="margin-top: 6px; font-size: 0.8rem; opacity: 0.7;">Independence Day 2026 • Made with <span>❤️</span> for India</p>
+  </footer>
+
+  <!-- ==========================================================================
+       JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    /* ==========================================================================
+       1. GENERATE ASHOKA CHAKRA SPOKES DYNAMICALLY (24 Spokes)
+       ========================================================================== */
+    const spokesGroup = document.getElementById('chakra-spokes');
+    if (spokesGroup) {
+      for (let i = 0; i < 24; i++) {
+        const angle = i * (360 / 24);
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', '100');
+        line.setAttribute('y1', '100');
+        line.setAttribute('x2', '100');
+        line.setAttribute('y2', '20');
+        line.setAttribute('transform', `rotate(${angle} 100 100)`);
+        spokesGroup.appendChild(line);
+      }
+    }
+
+    /* ==========================================================================
+       2. SCROLL REVEAL ANIMATION (IntersectionObserver)
+       ========================================================================== */
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.15
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    /* ==========================================================================
+       3. FLOATING TRICOLOR PARTICLES CANVAS (Ambient Layer)
+       ========================================================================== */
+    const pCanvas = document.getElementById('particle-canvas');
+    const pCtx = pCanvas.getContext('2d');
+    let pWidth, pHeight;
+    let particles = [];
+
+    const PARTICLE_COLORS = ['#FF671F', '#FFFFFF', '#046A38'];
+
+    function resizeParticleCanvas() {
+      pWidth = pCanvas.width = window.innerWidth;
+      pHeight = pCanvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeParticleCanvas);
+    resizeParticleCanvas();
+
+    class AmbientParticle {
+      constructor() {
+        this.reset();
+      }
+      reset() {
+        this.x = Math.random() * pWidth;
+        this.y = Math.random() * pHeight;
+        this.size = Math.random() * 2.5 + 1;
+        this.speedX = (Math.random() - 0.5) * 0.4;
+        this.speedY = -Math.random() * 0.5 - 0.2;
+        this.color = PARTICLE_COLORS[Math.floor(Math.random() * PARTICLE_COLORS.length)];
+        this.alpha = Math.random() * 0.6 + 0.2;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.y < -10 || this.x < -10 || this.x > pWidth + 10) {
+          this.reset();
+          this.y = pHeight + 5;
+        }
+      }
+      draw() {
+        pCtx.save();
+        pCtx.globalAlpha = this.alpha;
+        pCtx.fillStyle = this.color;
+        pCtx.shadowBlur = 8;
+        pCtx.shadowColor = this.color;
+        pCtx.beginPath();
+        pCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        pCtx.fill();
+        pCtx.restore();
+      }
+    }
+
+    const totalParticles = Math.min(window.innerWidth < 600 ? 30 : 60, 60);
+    for (let i = 0; i < totalParticles; i++) {
+      particles.push(new AmbientParticle());
+    }
+
+    function animateParticles() {
+      pCtx.clearRect(0, 0, pWidth, pHeight);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    /* ==========================================================================
+       4. CELEBRATION FIREWORKS EFFECT (Final Section Canvas)
+       ========================================================================== */
+    const fCanvas = document.getElementById('fireworks-canvas');
+    const fCtx = fCanvas.getContext('2d');
+    let fWidth, fHeight;
+    let fireworks = [];
+
+    function resizeFireworksCanvas() {
+      if (!fCanvas.parentElement) return;
+      fWidth = fCanvas.width = fCanvas.parentElement.clientWidth;
+      fHeight = fCanvas.height = fCanvas.parentElement.clientHeight;
+    }
+    window.addEventListener('resize', resizeFireworksCanvas);
+    resizeFireworksCanvas();
+
+    class Spark {
+      constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 4.5 + 1.5;
+        this.vx = Math.cos(angle) * speed;
+        this.vy = Math.sin(angle) * speed;
+        this.alpha = 1;
+        this.decay = Math.random() * 0.02 + 0.015;
+        this.gravity = 0.05;
+      }
+      update() {
+        this.vx *= 0.98;
+        this.vy *= 0.98;
+        this.vy += this.gravity;
+        this.x += this.vx;
+        this.y += this.vy;
+        this.alpha -= this.decay;
+      }
+      draw() {
+        fCtx.save();
+        fCtx.globalAlpha = Math.max(0, this.alpha);
+        fCtx.fillStyle = this.color;
+        fCtx.shadowBlur = 6;
+        fCtx.shadowColor = this.color;
+        fCtx.beginPath();
+        fCtx.arc(this.x, this.y, 2.2, 0, Math.PI * 2);
+        fCtx.fill();
+        fCtx.restore();
+      }
+    }
+
+    function createFirework(x, y) {
+      const colors = ['#FF671F', '#FFFFFF', '#046A38', '#FFD700'];
+      const chosenColor = colors[Math.floor(Math.random() * colors.length)];
+      for (let i = 0; i < 40; i++) {
+        fireworks.push(new Spark(x, y, chosenColor));
+      }
+    }
+
+    function triggerFireworksBatch() {
+      resizeFireworksCanvas();
+      for (let i = 0; i < 4; i++) {
+        setTimeout(() => {
+          const x = Math.random() * (fWidth * 0.8) + (fWidth * 0.1);
+          const y = Math.random() * (fHeight * 0.5) + (fHeight * 0.15);
+          createFirework(x, y);
+        }, i * 220);
+      }
+    }
+
+    function animateFireworks() {
+      fCtx.clearRect(0, 0, fWidth, fHeight);
+      for (let i = fireworks.length - 1; i >= 0; i--) {
+        fireworks[i].update();
+        fireworks[i].draw();
+        if (fireworks[i].alpha <= 0) {
+          fireworks.splice(i, 1);
+        }
+      }
+      requestAnimationFrame(animateFireworks);
+    }
+    animateFireworks();
+
+    // Auto-trigger small subtle fireworks periodically when tribute section is in view
+    let tributeObserved = false;
+    const tributeSection = document.getElementById('tribute');
+    const tributeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !tributeObserved) {
+          tributeObserved = true;
+          triggerFireworksBatch();
+          setInterval(() => {
+            if (entry.isIntersecting) {
+              const x = Math.random() * (fWidth * 0.8) + (fWidth * 0.1);
+              const y = Math.random() * (fHeight * 0.5) + (fHeight * 0.15);
+              createFirework(x, y);
+            }
+          }, 2400);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    tributeObserver.observe(tributeSection);
+
+    // Jai Hind button click animation
+    document.getElementById('hero-btn').addEventListener('click', () => {
+      triggerFireworksBatch();
+    });
+  </script>
+</body>
+</html>
